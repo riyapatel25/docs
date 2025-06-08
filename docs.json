@@ -1,12 +1,20 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Telemetron",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#D1E5E1",
+    "light": "#F25C54",
+    "dark": "#0095ff"
   },
+  "background": {
+  "color": {
+    "light": "#ffffff",
+    "dark": "#1A1A22"
+  },
+  "decoration": "gradient"
+},
+
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
@@ -18,20 +26,13 @@
             "pages": [
               "index",
               "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "development",
+              "backfill",
+              "integrations"
+
             ]
           }
+         
         ]
       },
       {
@@ -44,7 +45,14 @@
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Authentication",
+            "pages": [
+              "api-reference/api-key"
+
+            ]
+          },
+          {
+            "group": "Endpoints Available",
             "pages": [
               "api-reference/endpoint/post-customers",
               "api-reference/endpoint/post-orders"
@@ -55,23 +63,7 @@
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+  
     }
   },
   "logo": {
@@ -82,14 +74,10 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:shivani@telemetron.ai"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
+    
   },
   "footer": {
     "socials": {
